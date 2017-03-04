@@ -38,7 +38,7 @@ open class ScanBarcodeCameraManager: NSObject, AVCaptureMetadataOutputObjectsDel
     fileprivate var stillImageOutput : AVCaptureStillImageOutput?
     fileprivate var captureSession: AVCaptureSession!
     
-    var delegate: ScanBarcodeCameraManagerDelegate?
+    open var delegate: ScanBarcodeCameraManagerDelegate?
     private var captureDevice : AVCaptureDevice!
     private var isFocusMode = false
     private var isAutoUpdateLensPosition = false
